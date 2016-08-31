@@ -22,7 +22,7 @@ void loop() {
     }
   	digitalWrite(b, HIGH); // turn the LED on by making the voltage HIGH
   	delay(250); // wait
- 	  digitalWrite(a, LOW); // turn the LED off by making the voltage LOW
+  	digitalWrite(a, LOW); // turn the LED off by making the voltage LOW
   	delay(250); // wait
   }
 }
