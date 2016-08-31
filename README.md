@@ -1,8 +1,8 @@
 # Neuron and the Nervous Impulse - Biology Project
 
-Here is a simulation of the circuit in [circuits.io](https://circuits.io/circuits/2638171-biology-project)
-
 ## Circuit and code:
 ![Circuit](https://puu.sh/qVBfU/095140a673.png "Circuit")
 
 [Here](arduino.c) is the code behind it.
+
+And here is a simulation of the circuit in [circuits.io](https://circuits.io/circuits/2638171-biology-project).
