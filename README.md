@@ -1,1 +1,1 @@
-# Biology Project - Neuron and the Nervous Impulse
+# Neuron and the Nervous Impulse - Biology Project
