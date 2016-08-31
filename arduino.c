@@ -8,7 +8,7 @@ void setup() {
 
 // Loop:
 // Ligths the 0 led and then enter the for loop.
-// In the for loop it ligth the next led and then shuts down the one before.
+// In the for loop it ligths the next led and then shuts down the one before.
 // When the the outputs number(variables a and b) gets over 9 it resets them to 0.
 void loop() {
   int a, b;
