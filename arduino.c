@@ -1,27 +1,26 @@
 // Setup:
 // Goes trough all of the digital pins from 0 to 9 and initializes them as an output.
 void setup() {
-  for(int a=0; a<=9; a++){
-    pinMode(a, OUTPUT);
+  for(int led=0; led<=9; led++){
+    pinMode(led, OUTPUT);
   }
 }
 
 // Loop:
-// Ligths the 0 led and then enter the for loop.
-// In the for loop it ligth the next led and then shuts down the one before.
-// When the the outputs number(variables a and b) gets over 9 it resets them to 0.
+// In the for loop it ligth the next led and then shuts down previous one.
+// When the the outputs number(variables previousLED and nextLED) gets over 9 it resets them to 0.
 void loop() {
-  int a, b;
-  for (a=-1, b=0; true; a++, b++){
-    if (a>9){
-    	a=0;
+  int previousLED, nextLED;
+  for (previousLED=-1, nextLED=0; true; previousLED++, nextLED++){
+    if (previousLED>9){
+    	previousLED=0;
     }
-    if (b>9){
-      	b=0;
+    if (nextLED>9){
+      	nextLED=0;
     }
-  	digitalWrite(b, HIGH); // turn the LED on by making the voltage HIGH
+  	digitalWrite(nextLED, HIGH); // turn the LED on by making the voltage HIGH
   	delay(250); // wait
-  	digitalWrite(a, LOW); // turn the LED off by making the voltage LOW
+  	digitalWrite(previousLED, LOW); // turn the LED off by making the voltage LOW
   	delay(250); // wait
   }
 }
